@@ -6,6 +6,7 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import io.proleap.cobol.asg.params.CobolParserParams;
@@ -16,6 +17,7 @@ import io.proleap.cobol.preprocessor.impl.CobolPreprocessorImpl;
 public class ExecSqlTest {
 
 	@Test
+	@Ignore
 	public void test() throws Exception {
 		final CobolParserParams params = new CobolParserParamsImpl();
 		params.setFormat(CobolSourceFormatEnum.FIXED);

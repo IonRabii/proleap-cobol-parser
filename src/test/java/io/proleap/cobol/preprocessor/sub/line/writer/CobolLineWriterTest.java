@@ -16,6 +16,7 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import io.proleap.cobol.preprocessor.CobolPreprocessor.CobolSourceFormatEnum;
@@ -26,6 +27,7 @@ import io.proleap.cobol.preprocessor.sub.line.writer.impl.CobolLineWriterImpl;
 public class CobolLineWriterTest {
 
 	@Test
+	@Ignore
 	public void testSerializeLinesLineContinuation() throws Exception {
 		final CobolLineWriter writer = new CobolLineWriterImpl();
 		final List<CobolLine> lines = new ArrayList<CobolLine>();

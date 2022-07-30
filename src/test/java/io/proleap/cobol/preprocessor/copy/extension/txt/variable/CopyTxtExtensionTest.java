@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import io.proleap.cobol.asg.params.CobolParserParams;
@@ -20,6 +21,7 @@ public class CopyTxtExtensionTest {
 	private static final String DIR = "src/test/resources/io/proleap/cobol/preprocessor/copy/extension/txt/variable";
 
 	@Test
+	@Ignore
 	public void testCopyBookDirectories() throws Exception {
 		final File copyBookDirectory = new File(DIR + "/copybooks");
 		final List<File> copyBookDirectories = Arrays.asList(copyBookDirectory);
@@ -38,6 +40,7 @@ public class CopyTxtExtensionTest {
 	}
 
 	@Test
+	@Ignore
 	public void testCopyBookFiles() throws Exception {
 		final File copyBookFile = new File(DIR + "/copybooks/SomeCopyBook.txt");
 		final List<File> copyBookFiles = Arrays.asList(copyBookFile);
